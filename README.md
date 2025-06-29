@@ -33,4 +33,4 @@ A modern, interactive Tic Tac Toe game built with vanilla JavaScript, HTML, and 
 
 ---
 
-## ❤️ Built with ❤️ By Najar Anas 
+## 🚀 Built with ❤️ By Najar Anas 
