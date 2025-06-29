@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-image.jpg');
+ 
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 700px;
+  height: 610px;
+  background-color: whitesmoke;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.container.game-end :not(button) {
+  pointer-events: none;
+}
+.box {
+  width: calc((100% - 10px) / 3);
+  height: calc((100% - 10px) / 3);
+  background-color: #555;
+  cursor: pointer;
+  font-size: 10rem;
+  font-family: "Archivo", sans-serif;
+}
+.content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+button {
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+button:hover {
+  background-color: #4290e4fe;
+}
+
+/* .content.O {
+  color: red;
+}
+.content.X {
+  color: green;
+} */
+.content.win {
+  animation: winAnimation 1s linear;
+}
+@keyframes winAnimation {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
